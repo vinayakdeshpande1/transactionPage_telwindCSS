@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Of Users</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.0.0-insiders.4a070ac/tailwind.min.css" integrity="sha512-vJu7D5BpjnNXVpLBrl9LKLvmXBNjiLwge8EOZ/YS9XwiChpfKLAlydwIZvoJaDE3LI/kr3goH0MzDzNbBgyoOQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <div class="flex sm:flex-row flex-col">
+
+    <div class="flex flex-col  space-y-5 justify-between min-h-screen w-60 px-2 py-4 bg-green-200">
+
+      <div class=" flex items-center justify-between text-gray-600 text-3xl px-5"><b>Transactions</b></div>
+
+      <div class="flex flex-col flex-auto">
+        <div class="p-2 hover:bg-pink-100">
+          <div class="flex flex-row space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500 " viewBox="0 0 20 20"
+            fill="currentColor">
+            <path
+              d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+          </svg>
+            <h4 class="font-regular text-gray-500 hover:text-pink-600 ">Home</h4>
+          </div>
+        </div>
+        <div class="p-2 hover:bg-pink-100 ">
+          <div class="flex flex-row space-x-3 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500 " viewBox="0 0 20 20"
+              fill="currentColor">
+              <path
+                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+            </svg>
+            <h4 class="font-regular text-gray-500 hover:text-pink-600">History</h4>
+          </div>
+        </div>
+        <div class="p-2 hover:bg-pink-100">
+          <div class="flex flex-row space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
+            <h4 class="font-regular text-gray-500 hover:text-pink-600">Balances</h4>
+          </div>
+        </div>
+
+        <div class="p-2 hover:bg-pink-100">
+          <div class="flex flex-row space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"></path>
+            </svg>
+            <h4 class="font-regular text-gray-500 hover:text-pink-600 ">Cards</h4>
+          </div>
+        </div>
+
+        <div class="p-2 hover:bg-pink-100">
+          <div class="flex flex-row space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+            </svg>
+            <h4 class="font-regular text-gray-500 hover:text-pink-600 ">Recipients</h4>
+          </div>
+        </div>
+
+        <div class="p-2 hover:bg-pink-100 ">
+          <div class="flex flex-row space-x-3 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+            </svg>
+            <h4 class="font-regular text-gray-500 hover:text-pink-600 ">Reports</h4>
+          </div>
+        </div>
+
+        <div class="mt-8 px-2 hover:bg-pink-100">
+          <div class="flex flex-row space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+            </svg>
+            <h4 class="font-regular text-gray-500 hover:text-pink-600 ">Setting</h4>
+          </div>
+        </div>
+
+        <div class="p-2 hover:bg-pink-100">
+          <div class="flex flex-row space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+            </svg>
+            <h4 class="font-regular text-gray-500 hover:text-pink-600 ">Help</h4>
+          </div>
+        </div>
+
+        <div class="p-2 hover:bg-pink-100">
+          <div class="flex flex-row space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+            </svg>
+            <h4 class="font-regular text-gray-500 hover:text-pink-600 ">Privacy</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bg-blue-50 grow">
+        <div class="min-h-screen px-8">
+          <div class="flex-auto">
+            <div class="flex flex-col">
+      
+              <div class="flex bg-white">
+                  <div class="flex">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="#bbb" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                    </svg>
+                    <input type="text" placeholder="Search Transactions" name="search">
+                  </div>
+                  
+                  <div class="pl-96 ml-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700 " fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                    </svg>
+                  </div>
+                  <div class="h-10 w-10 ml-2">
+                    <img class="h-8 w-8 rounded-full"
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
+                      alt="">
+                  </div>
+                  <div>
+                      Emilia Birch  
+                  </div>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </div>
+              </div>
+
+              <div class="bg-red-100 py-2">
+
+                <div class="flex items-center py-4">
+                  <div class="flex-shrink-0 h-10 w-10">
+                    <img class="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60"
+                      alt="">
+                  </div>
+                  <div class="ml-4 flex">
+                    <div class="text-sm font-medium text-gray-900">
+                      <div class>
+                        Good Morining, Emilia Birch 
+                        <div class="flex">
+                          Duke Street Studion,
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-700" fill="none" viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.5 12.75l6 6 9-13.5" />
+                          </svg>
+                          <div>Verified Account</div>
+                         
+                        <div>
+                          
+                          
+                        </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+        
+                    <div class="h-10 ml-auto">
+                      <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+                      Add money
+                      </button>
+                      <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
+                      Send money
+                      </button>
+                   </div>
+        
+                  </div>
+                </div>
+
+
+              </div>
+      
+             
+      
+        </div>
+        
+        <div class="bg-blue-50 min-h-screen">
+          <div class="p-2 font-bold text-gray-600">Overview</div>
+          <div class=" mt-2 grid lg:grid-cols-3 sm:grid-cols-2 p-4 gap-10 ">
+            <!--Grid starts here-->
+            <div class="flex items-center justify-between p-5 bg-white rounded shadow-sm ">
+              <div>
+                <div class="text-sm text-gray-400 ">Account Balance</div>
+                <div class="flex items-center pt-1">
+                  <div class="text-3xl font-medium text-gray-600 ">$30,659.45</div>
+                </div>
+                <div class="text-sm text-blue-400 ">View all</div>
+              </div>
+              <div class="text-pink-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                    clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between p-5 bg-white rounded shadow-sm">
+              <div>
+                <div class="text-sm text-gray-400 ">Pending</div>
+                <div class="flex items-center pt-1">
+                  <div class="text-3xl font-medium text-gray-600 ">-$19,500</div>
+                </div>
+                <div class="text-sm text-blue-400 ">View all</div>
+              </div>
+              <div class="text-pink-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between p-5 bg-white rounded shadow-sm">
+              <div>
+                <div class="text-sm text-gray-400 ">Processed(last 30 days)</div>
+                <div class="flex items-center pt-1">
+                  <div class="text-3xl font-medium text-gray-600 ">$20,000</div>
+                </div>
+                <div class="text-sm text-blue-400 ">View all</div>
+              </div>
+              <div class="text-pink-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="p-4 font-bold text-gray-600">Recent activity</div>
+          <div class="grid  lg:grid-cols-1  md:grid-cols-1 p-4 gap-3">
+            <div class="col-span-2 flex flex-auto items-center justify-between  p-5 bg-white rounded shadow-sm">
+              <table class="min-w-full divide-y divide-gray-200 table-auto">
+                <thead class="bg-gray-50">
+                  <tr>
+                    <th scope="col"
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Transaction
+                    </th>
+                    <th scope="col"
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Amount
+                    </th>
+                    <th scope="col"
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Status
+                    </th>
+                    <th scope="col"
+                      class="px-6 py-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Date
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-gray-900">
+                            Payment to Molly Sanders
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      $20,000 USD
+                    </td>
+
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span
+                        class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        Success
+                      </span>
+                    </td>
+                    
+                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900">July 11,2020</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="flex-shrink-0 h-10 w-10">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-gray-900">
+                            Payment to Doug Mann
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      $19,500
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span
+                        class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-green-800">
+                        Processing
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900">July 5,2020</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="flex-shrink-0 h-10 w-10">
+                        <div class="ml-4">
+                          <div class="text-sm font-medium text-gray-900">
+                            Payment to Molly Sanders
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                      $8,750
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                      <span
+                        class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-100 text-green-800">
+                        Failed
+                      </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                      <a href="#" class="text-indigo-600 hover:text-indigo-900">July 5,2020</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
